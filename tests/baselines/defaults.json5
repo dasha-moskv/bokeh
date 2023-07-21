@@ -6045,6 +6045,12 @@
     },
     dimensions: "both",
   },
+  MeasurementTool: {
+    __extends__: "GestureTool",
+  },
+  AngleTool: {
+    __extends__: "MeasurementTool",
+  },
   Plot: {
     __extends__: "LayoutDOM",
     width: 600,
