@@ -6552,7 +6552,7 @@
     show_value: true,
     direction: "ltr",
     tooltips: true,
-    bar_color: "#e6e6e6",
+    appearance: "normal",
   },
   NumericalSlider: {
     __extends__: "AbstractSlider",
@@ -6595,6 +6595,27 @@
     step: 1,
   },
   RangeSlider: {
+    __extends__: "NumericalSlider",
+    format: "0[.]00",
+    value: {
+      type: "symbol",
+      name: "unset",
+    },
+    value_throttled: {
+      type: "symbol",
+      name: "unset",
+    },
+    start: {
+      type: "symbol",
+      name: "unset",
+    },
+    end: {
+      type: "symbol",
+      name: "unset",
+    },
+    step: 1,
+  },
+  MultiValuedSlider: {
     __extends__: "NumericalSlider",
     format: "0[.]00",
     value: {
